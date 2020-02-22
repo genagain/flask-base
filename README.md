@@ -10,4 +10,12 @@ git remote add origin git@github.com:genagain/PROJECT_NAME.git
 git add -A
 git commit -m "first commit"
 git push origin HEAD   
+git branch --set-upstream-to=origin/master master
+```
+
+Deploy to heroku
+```
+heroku login
+heroku create
+git push heroku master
 ```
